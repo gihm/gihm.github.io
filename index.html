@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <link rel="icon" type="image/png" href="img/resume-icon-16.ico">
+
+    <!-- Metas de la pagina  -->
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="Curriculum Vitae - Gloria Isabel Hernandez Macias" />
+    <meta name="keywords" content="historial, resumen, vida laboral" />
+    <meta name="author" content="Fabian Garcia" />
+    <meta name="copyright" content="Fabian Garcia" />
+
+    <!-- Layout multi-dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bulma Framework -->
+    <link type="text/css" rel="stylesheet" href="css/bulma.min.css" />
+
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/bf915a87f0.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery Framework -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery throttle / debounce -->
+    <script src="js/jquery.ba-throttle-debounce.min.js"></script>
+
+    <!-- Paver viewer -->
+    <link type="text/css" rel="stylesheet" href="css/paver.min.css">
+    <script src="js/jquery.paver.min.js"></script>
+
+    <!-- <link rel="sty     lesheet" href="css/debug.css"> -->
+
+    <title>CV Gloria Isabel</title>
+
+    <link type="text/css" rel="stylesheet" href="css/cv_style.css">
+</head>
+
+<body>
+    <div class="cc-selector">
+        <input checked="checked" id="esMX" type="radio" name="flags" value="esMX" onclick="handleClick(this);" />
+        <label class="drinkcard-cc esMX" for="esMX"></label>
+        <input id="enUS" type="radio" name="flags" value="enUS" onclick="handleClick(this);" />
+        <label class="drinkcard-cc enUS" for="enUS"></label>
+    </div>
+
+    <section id="seccion-cover" class="container">
+        <div class="panorama"><img src="img/PANO_20201108_120506.jpg" title="Sunset at Nørre Lyngby, Nordjylland" alt="We stood at the precipice of the sandy cliffs, in awe of the beautiful setting sun." /></div>
+    </section>
+
+    <main id="MainES">
+
+        <!-- SECCION ENCABEZADO -->
+        <section id="seccion-avatar" class="container">
+            <div id="sa-contenedor-principal" class="box is-flex is-flex-direction-column is-justify-content-center is-align-content-center">
+                <div class="container is-flex is-justify-content-center">
+                    <img id="avatar" src="img/glo.png" alt="avatar">
+                    <div id="c-titulo" class="content is-flex is-flex-direction-column is-justify-content-center is-align-content-center">
+                        <h1 class="title">Gloria Isabel Hernandez Macias</h1>
+                        <h3 class="subtitle">Maestría en Gestión de T.I.</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seccion-avatar-mobile" class="container">
+            <div id="sa-contenedor-principal" class="box is-flex is-flex-direction-column is-justify-content-center is-align-content-center">
+                <div class="container is-flex is-justify-content-center">
+                    <img id="avatar" src="img/glo.png" alt="avatar">
+                </div>
+                <div id="c-titulo-mobile">
+                    <div class="content" style="text-align: center; margin-top: 2em;">
+                        <h1 class="title">Gloria Isabel Hernandez Macias</h1>
+                        <h3 class="subtitle">Maestría en Gestión de T.I.</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION INFORMACION -->
+        <section class="container">
+            <div class="box">
+                <div class="columns">
+                    <!-- COLUMNA PERFIL -->
+                    <div class="column is-4">
+                        <div id="info-perfil" class="notification is-info">
+                            <div class="content" style="text-align: justify;">
+                                <h2 class="subtitle">PERFIL</h1>
+                                    <p>Analista de negocios con enfoque en el área de Tecnologías de Información, con una amplia experiencia, desde análisis y evaluación de sistemas existentes.</p>
+                                    <p>Considero que la buena gestión de los departamentos de sistemas, pueden contribuir grandemente a las empresas tanto en la implementación de proyectos como en la solución de las diversas situaciones que pueden surgir
+                                        durante su desarrollo.
+                                    </p>
+                            </div>
+                        </div>
+                        <div id="info-contacto-sidebar" class="notification has-text-white" style="background-color: teal;">
+                            <div class="content" style="text-align: justify;">
+                                <h2 class="subtitle">CONTACTO</h2>
+                                <p><b>TELÉFONO</b><br>(899) 9-515-028</p>
+                                <p><b>SITIO WEB</b><br><a href="https://gihm.github.io/">https://gihm.github.io/</a></p>
+                                <p><b>CORREO ELECTRÓNICO</b><br><a href="mailto:gloria_isabel@hotmail.com?Subject=He%20leido%20tu%20CV%20En%20Linea">gloria_isabel@hotmail.com</a>
+                                </p>
+                                <p><b>AFICIONES</b><br>
+                                    <ul>
+                                        <li>Ver peliculas</li>
+                                        <li>Escuchar Musica</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div id="BtnCV-Desktop" class="notification" style="text-align: center;">
+                            <a class="button is-success" target="_blank" href="recursos/CV - Gloria Isabel Hernandez Macias.pdf">
+                                <span class="icon"><i class="fas fa-download"></i></span>
+                                <span>Descargar CV (.PDF)</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- COLUMNA EXPERIENCIA -->
+                    <div class="column">
+                        <div class="notification has-background-white-ter">
+                            <div class="content">
+                                <h2 class="subtitle">EDUCACIÓN</h2>
+                                <hr>
+                                <blockquote>
+                                    <p><b>Universidad Tecmilenio</b><br> 2013-2015
+                                        <br> Título: Maestría en Gestión de Tecnologías de la Información</p>
+                                    <p><b>Universidad Autónoma de Tamaulipas</b><br> 2006-2010
+                                        <br> Título: Licenciatura en Ingeniería en Sistemas Computacionales</p>
+                                    <p><b>Centro de Estudios Tecnológicos y de Servicios No. 131</b><br> 2003-2006
+                                        <br> Título: Técnico en Computación</p>
+                                </blockquote>
+                                <p><b>DIPLOMADOS</b></p>
+                                <blockquote>
+                                    <p><b>Bronze Six Sigma Certified</b><br> iQor Global Services de México</p>
+                                    <p><b>Redes de Área Local</b><br> Universidad Autónoma de Tamaulipas</p>
+                                    <p><b>Programación Orientada a Objetos con Java (NetBeans IDE)</b><br> Universidad Autónoma de Tamaulipas</p>
+                                </blockquote>
+                                <br>
+                                <h2 class="subtitle">EXPERIENCIA LABORAL</h2>
+                                <hr>
+                                <blockquote>
+                                    <p><b>Centro de Administración de Servicios Municipales de Reynosa, Tamps. |
+                                            Planificación y monitoreo</b><br> Marzo 2021 - Actualidad<br>
+                                        <ul>
+                                            <li>Planificación de rutas para las unidades recolectoras de residuos inservibles
+                                            </li>
+                                            <li>Monitoreo de posición en mapa de dichas unidades.</li>
+                                            <li>Atención telefónica a reportes ciudadanos.</li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <p><b>AvenaSoft | Freelance</b><br> Marzo 2021 - Actualidad<br>
+                                        <ul>
+                                            <li>Diseño de logotipos</li>
+                                            <li>Administradora de proyectos.</li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <p><b>Universidad Autónoma de Tamaulipas | Docente</b><br> Agosto 2019 – Diciembre 2020<br>
+                                        <ul>
+                                            <li>
+                                                <p>Docente de horario libre en las siguientes asignaturas:</p>
+                                                <ul>
+                                                    <li>Análisis de Algoritmos</li>
+                                                    <li>Programación Avanzada</li>
+                                                    <li>SQL Server</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <p><b>iQor Global Services de México | Analista de Negocios II</b><br> Marzo 2017 – Enero 2021<br>
+                                        <ul>
+                                            <li>Coordinar tareas de desarrollo.</li>
+                                            <li>Crear, revisar o editar documentación de proyectos.</li>
+                                            <li>Programar Juntas de inicio y seguimiento de proyectos.</li>
+                                            <li>Crear diagramas de flujo.</li>
+                                            <li>Mantener en tiempo los proyectos.</li>
+                                            <li>Seguimiento de pruebas antes y después de implementaciones de cambios.</li>
+                                            <li>Crear Archivos de casos de prueba.</li>
+                                            <li>Mantener la comunicación activa.</li>
+                                            <li>Seguimiento y asignación de actividades con programadores, clientes y operaciones.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <p><b>iQor Global Services de México | Analista de Sistemas II</b><br> Enero 2012 – Marzo 2017<br>
+                                        <ul>
+                                            <li>Desarrollo y optimización de Software (Java).</li>
+                                            <li>Analizar y diseñar soluciones para el sistema de la organización.</li>
+                                            <li>Desarrollar consultas en SQL.</li>
+                                            <li>Colaborar con gerente de proyectos.</li>
+                                            <li>Análisis, corrección y seguimiento de errores en sistema.</li>
+                                            <li>Administrador de sistema.</li>
+                                            <li>Administrador de cuentas de usuario.</li>
+                                            <li>Planeación de proyectos.</li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <p><b>Jabil Global Services de México | Analista de Sistemas I</b><br> Enero 2011 – Enero 2012<br>
+                                        <ul>
+                                            <li>Captura, manipulación y análisis de información para la generación de reportes.
+                                            </li>
+                                            <li>Crear Reportes.</li>
+                                            <li>Generar esquema de rutas de proceso. </li>
+                                            <li>Auditar cuentas de usuario. </li>
+                                            <li>Cambios al sistema de producción de acuerdo con requerimientos.
+                                                <li>Instalación y configuración de Impresoras Laser y Zebra. </li>
+
+                                        </ul>
+                                    </p>
+                                </blockquote>
+                                <br>
+                                <h2 class="subtitle">APTITUDES</h2>
+                                <hr>
+                                <ul>
+                                    <li>Trabajo en equipo.</li>
+                                    <li>Proactividad.</li>
+                                    <li>Liderazgo.</li>
+                                    <li>Análisis de información y toma de decisiones.</li>
+                                    <li>Administración de proyectos.</li>
+                                    <li>Análisis, evaluación y desarrollo de Sistemas.</li>
+                                    <li>Desarrollo de consultas y objetos de base de datos.</li>
+                                    <li>Administración de usuarios.</li>
+                                    <li>Soporte a usuario finales.</li>
+                                    <li>Instalación de hardware y equipo de cómputo.</li>
+                                    <li>Seguimiento de falla en redes LAN.</li>
+                                    <li>Análisis y distribución de señal en redes inalámbricas </li>
+                                </ul>
+                                <br>
+                                <h2 class="subtitle">IDIOMAS</h2>
+                                <hr>
+                                <ul>
+                                    <li>Español (Nativo)</li>
+                                    <li>English (Limited Working)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COLUMNA CONTACTO (Solo Desktops) -->
+                    <div id="info-contacto-columna" class="column">
+                        <div class="notification has-text-white" style="background-color: teal;">
+                            <div class="content" style="text-align: justify;">
+                                <h2 class="subtitle">CONTACTO</h2>
+                                <p><b>TELÉFONO</b><br>(899) 9-515-028</p>
+                                <p><b>SITIO WEB</b><br><a href="https://gihm.github.io/">https://gihm.github.io/</a></p>
+                                <p><b>CORREO ELECTRÓNICO</b><br><a href="mailto:gloria_isabel@hotmail.com?Subject=He%20leido%20tu%20CV%20En%20Linea">gloria_isabel@hotmail.com</a>
+                                </p>
+                                <p><b>AFICIONES</b><br>
+                                    <ul>
+                                        <li>Ver peliculas</li>
+                                        <li>Series de TV</li>
+                                        <li>Escuchar Música</li>
+                                        <li>Caminar/Correr</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a id="BtnCV-Mobile" class="button is-success" target="_blank" href="recursos/CV - Gloria Isabel Hernandez Macias.pdf">
+            <span class="icon"><i class="fas fa-download"></i></span>
+            <span>Descargar CV (.PDF)</span>
+        </a>
+    </main>
+
+    <main id="MainEN">
+
+        <!-- SECCION ENCABEZADO -->
+        <section id="seccion-avatar" class="container">
+            <div id="sa-contenedor-principal" class="box is-flex is-flex-direction-column is-justify-content-center is-align-content-center">
+                <div class="container is-flex is-justify-content-center">
+                    <img id="avatar" src="img/glo.png" alt="avatar">
+                    <div id="c-titulo" class="content is-flex is-flex-direction-column is-justify-content-center is-align-content-center">
+                        <h1 class="title">Gloria Isabel Hernandez Macias</h1>
+                        <h3 class="subtitle">Master of IT Management</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seccion-avatar-mobile" class="container">
+            <div id="sa-contenedor-principal" class="box is-flex is-flex-direction-column is-justify-content-center is-align-content-center">
+                <div class="container is-flex is-justify-content-center">
+                    <img id="avatar" src="img/glo.png" alt="avatar">
+                </div>
+                <div id="c-titulo-mobile">
+                    <div class="content" style="text-align: center; margin-top: 2em;">
+                        <h1 class="title">Gloria Isabel Hernandez Macias</h1>
+                        <h3 class="subtitle">Master of IT Management</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION INFORMACION -->
+        <section class="container">
+            <div class="box">
+                <div class="columns">
+                    <!-- COLUMNA PERFIL -->
+                    <div class="column is-4">
+                        <div id="info-perfil" class="notification is-info">
+                            <div class="content" style="text-align: justify;">
+                                <h2 class="subtitle">PROFILE</h1>
+                                    <p>Business analyst focused on the Information Technology area, with a extensive experience, from analysis and evaluation of existing systems.</p>
+                                    <p>I believe that the good management of systems departments can contribute greatly to companies both in the implementation of projects and in the solution of the various situations that may arise during its development.
+                                    </p>
+                            </div>
+                        </div>
+                        <div id="info-contacto-sidebar" class="notification has-text-white" style="background-color: teal;">
+                            <div class="content" style="text-align: justify;">
+                                <h2 class="subtitle">CONTACT</h2>
+                                <p><b>PHONE</b><br>(899) 9-515-028</p>
+                                <p><b>WEBSITE</b><br><a href="https://gihm.github.io/">https://gihm.github.io/</a></p>
+                                <p><b>EMAIL</b><br><a href="mailto:gloria_isabel@hotmail.com?Subject=He%20leido%20tu%20CV%20En%20Linea">gloria_isabel@hotmail.com</a>
+                                </p>
+                                <p><b>HOBBIES</b><br>
+                                    <ul>
+                                        <li> Watch movies </li>
+                                        <li> TV series </li>
+                                        <li> Listen to Music </li>
+                                        <li> Walk / Run </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div id="BtnCV-Desktop" class="notification" style="text-align: center;">
+                            <a class="button is-success" target="_blank" href="recursos/Resume - Gloria Isabel Hernandez Macias.pdf">
+                                <span class="icon"><i class="fas fa-download"></i></span>
+                                <span>Download Resume (.PDF)</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- COLUMNA EXPERIENCIA -->
+                    <div class="column">
+                        <div class="notification has-background-white-ter">
+                            <div class="content">
+                                <h2 class="subtitle">EDUCATION</h2>
+                                <hr>
+                                <blockquote>
+                                    <p><b>Tecmilenio University</b><br> 2013-2015
+                                        <br> Title: Master in Information Technology Management</p>
+                                    <p><b>Autonomous University of Tamaulipas</b><br> 2006-2010
+                                        <br> Title: Bachelor of Computer Systems Engineering</p>
+                                    <p><b>Center for Industrial and Services Technological Studies No. 131</b><br> 2003-2006
+                                        <br> Title: Computer Technician</p>
+                                </blockquote>
+                                <p><b>GRADUATES</b></p>
+                                <blockquote>
+                                    <p><b>Bronze Six Sigma Certified</b><br> iQor Global Services de México</p>
+                                    <p><b>Local Area Networks</b><br> Autonomous University of Tamaulipas</p>
+                                    <p><b>Object Oriented Programming with Java (NetBeans IDE)</b><br> Autonomous University of Tamaulipas</p>
+                                </blockquote>
+                                <br>
+                                <h2 class="subtitle">WORK EXPERIENCE</h2>
+                                <hr>
+                                <blockquote>
+                                    <p><b>Reynosa Municipal Services Administration Center, Tamps. |
+                                        Planning and monitoring</b><br> March 2021 - Present<br>
+                                        <ul>
+                                            <li>Route planning for waste collection units useless
+                                            </li>
+                                            <li>Map position monitoring of these units.</li>
+                                            <li>Telephone attention to citizen reports.</li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <p><b>AvenaSoft | Freelance</b><br> March 2021 - Present<br>
+                                        <ul>
+                                            <li>Logo design</li>
+                                            <li>Project manager.</li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <p><b>Autonomous University of Tamaulipas | Teacher</b><br> August 2019 - December 2020<br>
+                                        <ul>
+                                            <li>
+                                                <p>Free time teacher in the following subjects:</p>
+                                                <ul>
+                                                    <li>Algorithm Analysis</li>
+                                                    <li>Programation advance</li>
+                                                    <li>SQL Server</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <p><b>iQor Global Services de México | Business Analyst II</b><br> March 2017 - January 2021<br>
+                                        <ul>
+                                            <li>Coordinate development tasks.</li>
+                                            <li> Create, review or edit project documentation. </li>
+                                            <li> Schedule project initiation and follow-up meetings. </li>
+                                            <li> Create flowcharts. </li>
+                                            <li> Keep projects on time. </li>
+                                            <li> Test tracking before and after change deployments. </li>
+                                            <li> Create Test Case Files. </li>
+                                            <li> Keep communication active. </li>
+                                            <li> Follow-up and assignment of activities with programmers, clients and operations. </li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <p><b>iQor Global Services de México | Systems Analyst II</b><br> January 2012 - March 2017<br>
+                                        <ul>
+                                            <li> Software development and optimization (Java). </li>
+                                            <li> Analyze and design solutions for the organization's system. </li>
+                                            <li> Develop queries in SQL. </li>
+                                            <li> Collaborate with project manager. </li>
+                                            <li> Analysis, correction and monitoring of system errors. </li>
+                                            <li> System administrator. </li>
+                                            <li> User account manager. </li>
+                                            <li> Project planning. </li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <p><b>Jabil Global Services de México | Systems Analyst I</b><br> January 2011 – January 2012<br>
+                                        <ul>
+                                            <li> Capture, manipulation and analysis of information for the generation of reports.
+                                            </li>
+                                            <li> Create Reports. </li>
+                                            <li> Generate process path scheme. </li>
+                                            <li> Audit user accounts. </li>
+                                            <li> Changes to the production system according to requirements.
+                                                <li> Installation and configuration of Laser and Zebra Printers. </li>
+
+                                        </ul>
+                                    </p>
+                                </blockquote>
+                                <br>
+                                <h2 class="subtitle">APTITUDES</h2>
+                                <hr>
+                                <ul>
+                                    <li> Teamwork. </li>
+                                    <li> Proactivity. </li>
+                                    <li> Leadership. </li>
+                                    <li> Information analysis and decision making. </li>
+                                    <li> Project management. </li>
+                                    <li> Analysis, evaluation and development of Systems. </li>
+                                    <li> Development of database queries and objects. </li>
+                                    <li> User administration. </li>
+                                    <li> End user support. </li>
+                                    <li> Hardware and computer equipment installation. </li>
+                                    <li> LAN fault tracking. </li>
+                                    <li> Analysis and distribution of signal in wireless networks </li>
+                                </ul>
+                                <br>
+                                <h2 class="subtitle">LANGUAGES</h2>
+                                <hr>
+                                <ul>
+                                    <li>Español (Nativo)</li>
+                                    <li>English (Limited Working)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COLUMNA CONTACTO (Solo Desktops) -->
+                    <div id="info-contacto-columna" class="column">
+                        <div class="notification has-text-white" style="background-color: teal;">
+                            <div class="content" style="text-align: justify;">
+                                <h2 class="subtitle">CONTACT</h2>
+                                <p><b>PHONE</b><br>(899) 9-515-028</p>
+                                <p><b>WEBSITE</b><br><a href="https://gihm.github.io/">https://gihm.github.io/</a></p>
+                                <p><b>EMAIL ELECTRÓNICO</b><br><a href="mailto:gloria_isabel@hotmail.com?Subject=He%20leido%20tu%20CV%20En%20Linea">gloria_isabel@hotmail.com</a>
+                                </p>
+                                <p><b>HOBBIES</b><br>
+                                    <ul>
+                                        <li> Watch movies </li>
+                                        <li> TV series </li>
+                                        <li> Listen to Music </li>
+                                        <li> Walk / Run </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a id="BtnCV-MobileEN" class="button is-success" target="_blank" href="recursos/Resume - Gloria Isabel Hernandez Macias.pdf">
+            <span class="icon"><i class="fas fa-download"></i></span>
+            <span>Download Resume (.PDF)</span>
+        </a>
+    </main>
+
+    <!-- PIE DE PAGINA -->
+    <footer class="footer" style="padding: 3rem 1.5rem 4rem;">
+        <div class="content has-text-centered">
+            <p>Sitio web desarrollado con &#10084;&#65039; por <b><a
+                        href="https://www.facebook.com/AvenaSoft/">AvenaSoft&#174;</a></b></p>
+        </div>
+    </footer>
+</body>
+
+<script>
+    $(document).ready(function() {
+        $("#BtnCV-Mobile").hide();
+        $("#BtnCV-MobileEN").hide();
+        $("#MainEN").hide();
+    });
+
+    $(function() {
+        // Paver
+        $("div.panorama").paver();
+    });
+
+    $(window).scroll(function() {
+        if ($(document).height() <= ($(window).height() + $(window).scrollTop())) {
+            //Bottom Reached
+            $("#BtnCV-Mobile").show();
+            $("#BtnCV-MobileEN").show();
+        } else {
+            $("#BtnCV-Mobile").hide();
+            $("#BtnCV-MobileEN").hide();
+        }
+    });
+
+    $(document).scroll(function() {
+        if ($(window).scrollTop() === 0) {
+            $(".cc-selector").show();
+        } else {
+            $(".cc-selector").hide();
+        }
+    });
+
+    function handleClick(myRadio) {
+        if (myRadio.value === "esMX") {
+            $("#MainES").show();
+            $("#MainEN").hide();
+        } else if (myRadio.value === "enUS") {
+            $("#MainEN").show();
+            $("#MainES").hide();
+        }
+        // alert('Old value: ' + currentValue);
+        // alert('New value: ' + myRadio.value);
+        // currentValue = myRadio.value;
+    }
+</script>
+
+</html>
